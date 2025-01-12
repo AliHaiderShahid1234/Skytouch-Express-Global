@@ -1,157 +1,213 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-  h3 {
-    background-color: #004080;
-    padding: 10px;
-  }
-  
-  .navbar {
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navbar */
-    margin-top: 0; /* Remove any default margin */
-  }
+h3 {
+  background-color: #004080;
+  padding: 10px;
 
-  .navbar-brand img {
-    max-height: 50px; /* Adjust logo size */
-  }
+}
 
-  .nav-link, .dropdown-item {
-    font-size: 1.25rem; /* Equivalent to h4 */
-  }
+.testimonials p {
+  padding-left: 500px;
+  padding-right: 500px;
+}
 
-  .contact-number {
-    font-size: 1rem;
-    color: gray;
-  }
-  
-  section {
-    padding: 0;
-    margin: 0;
-  }
-  
-  #home {
-    background: url('https://source.unsplash.com/1600x900/?marble,interior') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #home h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  #home p {
-    font-size: 1.2rem;
-  }
-  
-  .carousel-inner {
-    height: 500px; 
-  }
+.testimonials h6 {
+  color: #004080;
+}
 
-  .carousel-item img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .btn-primary {
-    background-color: #004080;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-primary:hover {
-    background-color: #ffcc00; 
-    color: #004080;
-  }
+#carouselIndicators {
+  color: #004080;
+}
 
-    .banner {
-      position: relative;
-      height: 300px;
-      overflow: hidden;
-    }
+.navbar {
+  margin-top: 0;
+}
 
-    .banner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.nav-link,
+.dropdown-item {
+  font-size: 1.2rem;
+}
 
-    .overlay-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-    }
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 500px;
+  margin-bottom: 50px;
+}
 
-    .card-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-      background-color: #004080;
-      color: white;
-      padding: 0.5rem;
-      border-radius: 0 0 5px 5px;
-    }
-    
-    .card {
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border: none;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .card img {
-      border-radius: 5px 5px 0 0;
-    }
-    
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    .row.g-4 {
-      gap: 1.5rem;
-    }
+.header-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
 
-    .carousel-caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      z-index: 10; /* Ensure it appears above the image */
-    }
-    
-    .carousel-caption h3 {
-      font-size: 2rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-    
-    .carousel-caption p {
-      font-size: 1.2rem;
-    }
-    
-    .carousel-caption .btn {
-      background-color: #004080;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 50px;
-    }
+.contact-number {
+  font-size: 1rem;
+  color: gray;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+}
+
+#home {
+  background: url('https://source.unsplash.com/1600x900/?marble,interior') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffcc00;
+  color: #004080;
+}
+
+.banner {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.row.g-4 {
+  gap: 1.5rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+  /* Ensure it appears above the image */
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.carousel-caption .btn {
+  background-color: #004080;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
