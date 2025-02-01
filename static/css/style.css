@@ -314,9 +314,6 @@ section {
   color: white;
 }
 
-footer i {
-  border: 1px solid black ;
-}
 
 .card-title {
   font-size: 1.5rem;
@@ -399,4 +396,33 @@ footer i {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.footer-wraper {
+  padding: 70px;
+  padding-inline: 1px;
+}
+
+footer h6 {
+  font-size: medium;
+}
+
+footer p {
+  font-size: medium;
+  padding-right: 50px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+.name-headings {
+  font-size: small;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
