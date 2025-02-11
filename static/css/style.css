@@ -1,3 +1,5 @@
+/* Base Styling */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -12,8 +14,8 @@ h3 {
 
 a {
   text-decoration: none; 
-  color: inherit; /* Makes the text color the same as the surrounding text */
-  cursor: text; /* Changes the cursor to a text cursor instead of a pointer */
+  color: inherit;
+  cursor: text; 
 }
 
 a:hover, a:focus {
@@ -21,140 +23,18 @@ a:hover, a:focus {
   color: inherit;
 }
 
-
-.testimonials p {
-  padding-left: 500px;
-  padding-right: 500px;
-}
-
-.testimonials h6 {
-  color: #004080;
-}
-
-#carouselIndicators {
-  color: #004080;
-}
-
 /* Navbar styling */
+
 header {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  z-index: 9;
-}
-
-.header_bar {
-  padding: 10px 0;
-}
-
-.logo img {
-  width: 50px;
-}
-
-.header_top_right {
-  float: right;
-  text-align: right;
-}
-
-#menu {
-  position: relative;
-  text-align: right;
-}
-
-#menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#menu ul li {
-  display: inline-block;
-  position: relative;
-  margin: 0 4px;
-}
-
-#menu ul li:last-child {
-  margin-right: 0;
-}
-
-#menu ul li a {
-  color: black;
-  padding: 8px 25px;
-  display: block;
-  text-decoration: none;
-  position: relative;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-
-/* Hover effects for main menu items */
-#menu ul li a:hover,
-#menu ul li.active a,
-#menu ul li.current_page_item > a,
-#menu ul li.current-menu-ancestor > a,
-#menu ul li.current-menu-item > a,
-#menu ul li.current-menu-parent > a {
-  color: var(--primary);
-}
-
-/* Dropdown Menu */
-#menu li > ul {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 999;
-  min-width: 220px;
-  white-space: nowrap;
-  visibility: hidden;
-  opacity: 0;
-  background: white;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-#menu li:hover > ul {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Submenu Items */
-#menu li > ul li {
-  background: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
-  display: block;
-  position: relative;
-  margin: 0;
-  text-align: left;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Submenu Text */
-#menu li > ul li a {
-  color: black;
-  font-size: 14px;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-weight: 500;
-  display: block;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-/* Hover effect for submenu */
-#menu li > ul li:hover {
-  background-color: gray;
-}
-
-#menu li > ul li:hover a {
-  color: white;
-}
-
-
-header {
-  position: relative;
   z-index: 10;
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo img {
   padding-top: 20px;
@@ -215,262 +95,113 @@ header {
   color: var(--primary);
 }
 
-
-section {
-  padding: 0;
-  margin: 0;
+.header_bar {
+  padding: 10px 0;
 }
 
-#home {
-  background: url('https://source.unsplash.com/1600x900/?marble,interior') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header_top_right {
+  float: right;
+  text-align: right;
 }
 
-#home h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#home p {
-  font-size: 1.2rem;
-}
-
-.carousel-inner {
-  padding: 0;
-  margin: 0;
-  cursor: e-resize; 
-  position: relative; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;
-}
-
-.carousel-item img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(50%);
-}
-
-.product-card {
+#menu {
   position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  border-radius: 0;
+  text-align: right;
 }
 
-.product_thumb {
-  display: block;
-  overflow: hidden;
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.product_img {
-  width: 100%;
-  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  transition: 0.4s ease-in-out;
-  z-index: 1;
-}
-
-.product_title {
+#menu ul li {
+  display: inline-block;
   position: relative;
-  background-color: #004080;
-  color: #004080;
-  padding: 10px;
-  text-align: center;
-  z-index: 2;
-  transition: background-color 0.4s ease-in-out;
-  font-size: 25px;
+  margin: 0 4px;
 }
 
-.product-card:hover .product_img {
-  transform: scale(1.1);
-  filter: brightness(70%);
+#menu ul li:last-child {
+  margin-right: 0;
 }
 
-.product-card:hover .overlay {
-  background: #868789;
-}
-
-.product-card:hover .product_title {
-  background-color: #868789;
+#menu ul li a {
   color: black;
-}
-
-
-.banner {
+  padding: 8px 25px;
+  display: block;
+  text-decoration: none;
   position: relative;
-  overflow: hidden;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(50%);
+#menu ul li a:hover,
+#menu ul li.active a,
+#menu ul li.current_page_item > a,
+#menu ul li.current-menu-ancestor > a,
+#menu ul li.current-menu-item > a,
+#menu ul li.current-menu-parent > a {
+  color: var(--primary);
 }
 
-.overlay-content {
+#menu li > ul {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  min-width: 220px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  background: white;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#menu li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#menu li > ul li {
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  display: block;
+  position: relative;
+  margin: 0;
+  text-align: left;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#menu li > ul li a {
+  color: black;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#menu ul li a i {
+  font-size: 14px;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu li:hover > a i {
+  transform: rotate(180deg);
+}
+
+
+#menu li > ul li:hover {
+  background-color: gray;
+}
+
+#menu li > ul li:hover a {
   color: white;
 }
 
-.underline-hover {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.underline-hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background-color: currentColor;
-  transition: width 0.3s ease-in-out;
-}
-
-.underline-hover:hover::after {
-  width: 100%;
-}
-
-
-/* Main Card Container */
-.news-card {
-  background-color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Image Container for Overlay */
-.news-img-container {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Image Styling */
-.news-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  border-radius: 5px 5px 0 0;
-}
-
-/* Overlay Effect */
-.news-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);  /* Transparent by default */
-  transition: background-color 0.3s ease;
-}
-
-/* Hover Effect for Darker Image */
-.news-img-container:hover .news-img {
-  transform: scale(1.05); /* Slight zoom */
-  filter: brightness(70%); /* Darken the image */
-}
-
-.news-img-container:hover .news-overlay {
-  background-color: rgba(0, 0, 0, 0.3); /* Apply dark overlay */
-}
-
-/* Body Section */
-.news-body {
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Title Styling */
-.news-title {
-  font-size: 1.75rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Description Text */
-.news-text {
-  font-size: 1.2rem;
-  margin: 0.75rem 0;
-  line-height: 1.5;
-}
-
-/* Read More Link */
-.news-link {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-decoration: none;
-  color: #004080;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-/* Hover Effect for Link */
-.news-link:hover {
-  color: #00264d;
-}
-
-
-
-.row.g-4 {
-  gap: 1.5rem;
-}
-
-
-.carousel-caption {
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  z-index: 10;
-}
-
-.carousel-caption h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.carousel-caption p {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.btn-primary {
-  font-size: 1.1rem;
-  padding: 10px 20px;
-  border-radius: 0px;
-  border: 2px solid transparent;
-}
+/* Header Dropdown Styling */
 
 .dropdown {
   position: relative;
@@ -505,6 +236,215 @@ section {
   display: block;
 }
 
+.dropdown-arrow {
+  font-size: 14px;
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-arrow {
+  transform: rotateX(180deg);
+}
+
+
+/* Carousel Styling */
+
+.carousel-inner {
+  padding: 0;
+  margin: 0;
+  cursor: e-resize; 
+  position: relative; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.carousel-caption h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Product Card Styling */
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 0;
+}
+
+.product_thumb {
+  display: block;
+  overflow: hidden;
+}
+
+.product_img {
+  width: 100%;
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+  display: block;
+}
+
+
+.product_title {
+  position: relative;
+  background-color: #004080;
+  color: #004080;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
+  transition: background-color 0.4s ease-in-out;
+  font-size: 25px;
+}
+
+.product-card:hover .product_img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+.product-card:hover .overlay {
+  background: #868789;
+}
+
+.product-card:hover .product_title {
+  background-color: #868789;
+  color: black;
+}
+
+/* Banner Styling */
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+/* News Card Styling */
+
+.news-card {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.news-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 5px 5px 0 0;
+}
+
+.news-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.news-img-container:hover .news-img {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+
+.news-img-container:hover .news-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.news-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.news-text {
+  font-size: 1.2rem;
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
+.news-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.news-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.news-link:hover {
+  color: #00264d;
+}
+
+/* Testimonials */
+
+.testimonials p {
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.testimonials h6 {
+  color: #004080;
+}
+
+/* Footer Styling */
+
 .footer-wraper {
   padding: 70px;
   padding-inline: 1px;
@@ -534,3 +474,57 @@ footer p {
   padding-bottom: 0;
 }
 
+
+/* Contact Hover Effect */
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+/* Button Design for website */
+
+.btn-primary {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 0px;
+  border: 2px solid transparent;
+}
+
+/* Section Styling */
+section {
+  padding: 0;
+  margin: 0;
+}
+
+.row.g-4 {
+  gap: 1.5rem;
+}
+
+/* Overlay Effect */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+}
