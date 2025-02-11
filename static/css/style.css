@@ -241,6 +241,8 @@ section {
 }
 
 .carousel-inner {
+  padding: 0;
+  margin: 0;
   cursor: e-resize; 
   position: relative; 
   background-position: center; 
@@ -289,7 +291,7 @@ section {
 
 .product_title {
   position: relative;
-  background-color: lightgrey;
+  background-color: #004080;
   color: #004080;
   padding: 10px;
   text-align: center;
@@ -304,12 +306,12 @@ section {
 }
 
 .product-card:hover .overlay {
-  background: #004080;
+  background: #868789;
 }
 
 .product-card:hover .product_title {
-  background-color: #004080;
-  color: white;
+  background-color: #868789;
+  color: black;
 }
 
 
@@ -440,6 +442,7 @@ section {
 .row.g-4 {
   gap: 1.5rem;
 }
+
 
 .carousel-caption {
   height: 400px;
