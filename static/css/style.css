@@ -302,6 +302,8 @@ section {
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
+  text-align: center;
+  align-items: center;
 }
 
 .carousel-item img {
@@ -324,6 +326,7 @@ section {
 .product_thumb {
   display: block;
   overflow: hidden;
+  background-color: black;
 }
 
 .product_img {
