@@ -559,3 +559,32 @@ footer p {
   padding-bottom: 0;
 }
 
+
+footer img {
+  filter: brightness(0) invert(1);
+}
+
+.colors {
+  filter: brightness(0) invert(1);
+}
+
+.colors i {
+  border-radius: 0px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+}
+
+.carousel-indicators button {
+  width: 40px; 
+  height: 8px;
+  background-color: gray; 
+  margin: 0 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+  background-color: rgba(23, 83, 195, 0.784); 
+}
