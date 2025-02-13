@@ -22,11 +22,6 @@ a:hover, a:focus {
 }
 
 
-.testimonials p {
-  padding-left: 500px;
-  padding-right: 500px;
-}
-
 .testimonials h6 {
   color: #004080;
 }
@@ -585,6 +580,16 @@ footer img {
   transition: background-color 0.3s ease-in-out;
 }
 
-.carousel-indicators .active {
+.carousel-indicators [data-bs-target].active {
   background-color: rgba(23, 83, 195, 0.784); 
 }
+
+.carousel-indicators [data-bs-target] {
+  width: 45px;
+  height: 3px;
+  background-color: #ddd;
+  margin: 0 5px;
+  transition: background-color 0.3s ease-in-out;
+  opacity: 1;
+}
+
